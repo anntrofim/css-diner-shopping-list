@@ -1,0 +1,279 @@
+*{transition: all .1s ease-in;}
+
+body {
+	padding: 10px;
+	background-color: #ffffff;
+	font-family: Trebuchet, Arial, sans-serif;
+	margin: 0 auto;
+	font-size: 110%;
+}
+
+section {
+	background-color: #3b3f45;
+	padding-bottom: 60px;
+}
+
+header {
+	background-color: #4a4f56;
+	color: #eb7e7e;
+	line-height: 80%;
+	text-align: center;
+	padding: 5px;
+
+}
+
+h3{
+	font-weight: normal;
+}
+
+footer {
+	background-color: #4a4f56;
+	color: #eb7e7e;
+	text-align: center;
+	padding: 1px;
+	width: 700px;
+	margin: auto;
+}
+
+/*.submit {
+	background-color: #4a4f56;
+	color: #eb7e7e;
+	text-align: center;
+	padding: 1px;
+	width: 700px;
+	margin: auto;
+}*/
+
+ul {
+	color: #ffffff;
+	width: 700px;
+	margin: 50px auto 50px auto;
+	padding-left: 0;
+
+}
+
+li {
+	list-style-type: none;
+	margin-left: 0;
+    padding-left: 0;
+	padding: 10px;
+	font-size: 140%;
+}
+
+ul li:nth-child(2n) {
+	background-color: #7a7593;
+}
+
+ul li:nth-child(2n+1) {
+	background-color: #88839e;
+}
+
+.item-description {
+	font-size: 50%;
+}
+
+input {
+    display: inline-block;
+	transform: scale(2);
+	cursor:pointer;
+}
+
+ul li:hover {
+	background-color: #625e77;
+	border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+ul li:active {
+	background-color: #eb7e7e;
+}
+
+ul li:nth-child(2n) input:checked + span {
+	color: #88839e;
+	text-decoration: line-through;
+}
+
+ul li:nth-child(2n+1) input:checked + span {
+	color: #7a7593;
+	text-decoration: line-through;
+}
+
+.item-description:before {
+	content: "("
+}
+
+.item-description:after {
+	content: ")"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	background-color: #3399cc;
+	color: #ffffff;
+	margin: 0 auto;
+	width: 75%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	font-size: 0;
+	border: 3px solid #ffffff;
+	width: 75%;
+
+}
+
+ul li {
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 18px;
+	text-align: center;
+	padding: 40px 0;
+
+}
+
+ul:hover {
+	opacity: 0.7;
+}
+
+
+.degrees {
+	opacity: 0.7;
+}
+
+
+.lisbon {
+	background-color: #3399cc;
+
+	width: 50%;
+}
+
+.paris {
+	background-color: #33cccc;
+
+	width: 25%;
+}
+
+.belgrad{
+	background-color: #996699;
+	width: 25%;
+}
+
+.moscow{
+
+	background-color: #c24747;
+	width: 25%;
+}
+
+.tel-aviv{
+
+	background-color: #e2674a;
+	width: 25%;
+}
+
+.cair{
+
+	background-color: #ffcc66;
+	width: 25%;
+}
+
+.new-york{
+
+	background-color: #99cc99;
+	width: 25%;
+}
+
+.new-delhi{
+
+	background-color: #669999;
+	width: 25%;
+}
+
+.san-francisco{
+
+	background-color: #cc6699;
+	width: 50%;
+}
+
+.tokyo{
+	width: 25%;
+}
+
+.sydney{
+	background-color: #666699;
+	width: 100%
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Forecast</title>
+	<link rel="shortcut icon" type="image/x-icon" href="">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<body>
+<h3>CSS Weather Forecast <i class="wi wi-sunrise"></i></h3>
+	<ul>
+		<li class="lisbon">
+			Lisbon <span class="degrees">21&#176;C <i class="wi wi-day-sunny"></i></span>
+		</li>
+		<li class="paris">
+			Paris <span class="degrees">11&#176;C <i class="wi wi-night-rain-mix"></i></span>
+		</li>
+		<li class="belgrad">
+			Belgrade <span class="degrees">15&#176;C <i class="wi wi-day-cloudy"></i></span>
+		</li>
+		<li class="moscow">
+			Moscow <span class="degrees">21&#176;C <i class="wi wi-day-cloudy-high"></i></span>
+		</li>
+		<li class="tel-aviv">
+			Tel Aviv <span class="degrees">32&#176;C <i class="wi wi-hot"></i></span>
+		</li>
+		<li class="cair">
+			Cair <span class="degrees">21&#176;C <i class="wi wi-day-sunny"></i></span>
+		</li>
+		<li class="new-york">
+			New York <span class="degrees">17&#176;C <i class="wi wi-day-thunderstorm"></i></span>
+		</li>
+		<li class="new-delhi">
+			New Delhi <span class="degrees">17&#176;C <i class="wi wi-rain-wind"></i></span>
+		</li>
+		<li class="san-francisco">
+			San Francisco <span class="degrees">15&#176;C <i class="wi wi-day-sunny-overcast"></i></span>
+		</li>
+		<li class="tokyo">
+			Tokyo <span class="degrees">8&#176;C <i class="wi wi-night-clear"></i></span>
+		</li>
+		<li class="sydney">
+			Sydney <span class="degrees">25&#176;C <i class="wi wi-night-partly-cloudy"></i></span>
+		</li>
+	</ul>
+<p>Have a nice day and don't forget umbrella if you are in New Delih now!</p>
+
+</body>
+
+
+</html>
+
+*/
